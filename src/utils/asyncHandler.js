@@ -1,5 +1,5 @@
 const asyncHandler = (responseHandler) =>{
-    async (req,res,next) =>{
+    return async (req,res,next) =>{
         try {
             await responseHandler(req,res,next);
         } catch (error) {
